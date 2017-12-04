@@ -21,16 +21,11 @@ export const getItems = createSelector(
   [getItemsByTitle, getFilterByDate],
   (title, date) => {
     if (date !== 'all') {
-      return title.filter((t) => {
-      return  t.created_at == date
-      })
+      return title.filter((t) => t.created_at == date)
     } else {
       return title
     }
-
-
-    console.log('finalItems', finalItems)
-    return finalItems;
+      return finalItems;
   }
 )
 
