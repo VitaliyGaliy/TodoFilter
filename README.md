@@ -1,2 +1,1 @@
-# Grocery
-# TodoFilter
+npm run dev to start the project.

@@ -1,0 +1,60 @@
+.home {
+  padding: 0.5rem;
+  flex: 1;
+  min-height: 100%;
+
+  .home__Image {
+    width: 100%;
+  }
+
+  .newsShedule {
+    @include flexWrap;
+    box-shadow: $box-shadow;
+    margin-bottom: 1rem;
+    padding: 0.5em;
+
+    &__Date {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+
+    &__Icon {
+      font-size: 2rem;
+      padding: 0 .5rem;
+    }
+
+    &__Text {
+      box-sizing: border-box;
+      padding: 0.5rem;
+      font-size: 1rem;
+      text-align: justify;
+      flex: 1 1 80%;
+    }
+
+    @include mQ($md) {
+      &__Text {
+        font-size: 1.2rem;
+        flex: 1 1 100%;
+      }
+      &__Date {
+        font-size: 1.2rem;
+      }
+    }
+
+    @include mQ($sm){
+      &__Date {
+        font-size: 1.2rem;
+      }
+
+      &__Text {
+        font-size: 1.2rem;
+      }
+    }
+
+    @include mQ($xs){
+      &__Text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

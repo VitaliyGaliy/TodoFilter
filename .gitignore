@@ -1,0 +1,15 @@
+.DS_STORE
+*.log
+
+node_modules
+
+dist
+coverage
+
+.idea
+*.iml
+
+bom
+src/static/css/
+src/static/fonts/
+src/static/js/
